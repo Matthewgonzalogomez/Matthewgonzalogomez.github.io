@@ -1,17 +1,52 @@
-<!DOCTYPE html>
-<html>
-        <head>
-                <title> 
-                        Welcome
-                </title>
-        </head>
-        <body>
-                <h1>
-                        Welcome
-                </h1>
-                <p>
-                asdgfbawhibivbougougldwo9gfi
-                </p>
-        </body>
+</<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+    <link rel="icon" href="icon.png"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mainstylesheet.css">
+  </head>
+  <body>
+    <p>Hello! Welcome to my page, this was built by me, Matthew Gomez. Below are links to my other projects I've created and worked on</p>
+    <br>
+    <a href="BDO/index.html">This is a link</a><br>
+    <i class="glyphicon glyphicon-envelope"></i>
+    <a href="matthewgonzalogomez@gmail.com">Matthewgonzalogomez</a>
+
+    <form method="post">
+    Enter Your Name and Email Here if you wish to contact me:<br>
+    <p>Name:</p>
+    <input type="text" name="name"></input>
+    <p>Email address:</p>
+    <input type="text" name="email"></input>
+    <input type="submit" name="submit">
+
+  </form>
+
+  </body>
 </html>
 
+<php
+
+if(isset($_POST['name']))
+{
+$data=$_POST['name'];
+$fp = fopen('data.txt', 'a');
+fwrite($fp, $data);
+fclose($fp);
+$x=1;
+}
+if(isset($_POST['email']))
+{
+$data=$_POST['email'];
+$fp = fopen('data.txt', 'a');
+fwrite($fp, $data);
+fclose($fp);
+$y=1;
+}
+if($x=1 && $y=1)
+{
+  echo "Submission Successful! Thank you!"
+}
+?>
