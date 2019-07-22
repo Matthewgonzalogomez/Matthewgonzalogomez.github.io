@@ -1,0 +1,168 @@
+/* Matthew Gomez */
+body{
+	text-align: left;
+	font-family: "Times New Roman", cursive, sans-serif;
+	color: #FFFFFF;
+	font-size: 20px;
+	line-height: 25px;
+	background-color:#000000;
+	background-image: url("images/wallpaper.jpg");
+	background-attachment: fixed;
+	padding-left: 30px;
+	background-size: cover;
+}
+p{
+		padding-left: 30px;
+		color: white;
+}
+ul{
+	padding-left: 60px;
+}
+.mains{
+}
+.classes{
+	height: 100px;
+}
+h1{
+	color: #ff0000;
+	padding-left:55px;
+}
+hr{
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left:0px;
+	margin-right: 0px;
+	border-style:inset;
+	border-width: 1px;
+}
+span{
+	padding-left: 0px;
+}
+a:link{
+	color:red;
+}
+a:visited{
+	color:orange;
+}
+a:hover{
+	color:green;
+}
+a:active{
+	color:hotpink;
+}
+.secondary {
+	float:right;
+	margin: 0 0 10px 10px;
+}
+.title{
+	text-align: center;
+	font-size: 32px;
+}
+.images{
+	border: 5px solid black;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+	 color:#000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+	 position:fixed;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #FF0000;
+	 transition: 0.2s;
+	 position:relative;
+	 display:block;
+	 padding-left:40px;
+}
+.sidenav a:active{
+	color: #0000FF;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+	 background-color: black;
+	 color:white;
+	 border:0px;
+	 cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.bgg{
+	width:1000px;
+	height:500px;
+}
+.list{
+	width: 700px;
+	height: 400px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}

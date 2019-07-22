@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title> Supreme commander </title>
+			<link rel="shortcut icon" href="images/supremecommander.jpg">
+			<link rel="stylesheet" href="my_styleindex.css">
+		<body>
+			<label class="switch">
+				<input type="checkbox" onclick="on()">
+				<span class="slider"></span>
+			</label>
+			<p>
+				&uarr; Switch between games!
+			</p>
+			<hr>
+			<p id="main">
+			</p>
+
+			<script>
+				var toggle="off"
+				function on(){
+					if(toggle=="off"){
+						document.getElementById('main').innerHTML = "<p class='title'> Supreme Commander </p><br><p> Supreme Commander is a Real Time Strategy (RTS) in which you, the player, fight for a multitude of factions as they compete to exist in the galaxy.</p><br><";
+						toggle="on";
+					}
+					else{
+						document.getElementById('main').innerHTML = "SampleText";
+						toggle="off";
+					}
+				}
+				window.onload =  on;
+			</script>
+
+
+
+
+
+
+
+
+		</body>
+	</html>
